@@ -3,13 +3,19 @@
 #
 
 # Name of your site (displayed in the header)
-name: Duygu Kacar
+name: Duygu Kaçar
 
 # Short bio or description (displayed in the header)
-description: Creative Director and Fashion Designer
+description: Duygu Kaçar is a creative director and fashion designer from London, UK.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar:
+
+# Email address
+email: mail@duygukacar.com
+
+# Bio
+bio: Born in Istanbul, Duygu has lived in London for the last ten years. She graduated from London College of Fashion in 2014 with a degree in Fashion Design, building on her Art & Design Foundation certificate, and has worked in the fashion industry since 2006 as a designer, creative director and garment production consultant. Her Istanbul upbringing is central to her designs&#58; Their eclecticism, unexpected fabric combinations and frequent juxtapositions of the normal with the surreal spring directly from Istanbul’s unique character as a city equally ancient and modern, with a foot planted in two contrasting continents. Undeniably feminine and yet fascinated with science fiction, the animal, and the other-worldly, Duygu’s pieces experiment with collages of detail and texture to achieve a truly unique look.
 
 #
 # Flags below are optional
@@ -18,7 +24,6 @@ avatar:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: mail@duygukacar.com
   facebook:
   flickr:
   github:
@@ -41,7 +46,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: http://duygukacar.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
