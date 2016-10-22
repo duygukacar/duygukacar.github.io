@@ -27,7 +27,7 @@
     </div>
 
     <footer class="pa3 ph5-ns pv6 bt b--black-10 black-70">
-      <a href="mailto:" class="link b f3 f2-ns dim black-70 lh-solid">{{ site.email }}</a>
+      <a href="mailto:{{ site.email | encode_email }}" class="link b f3 f2-ns dim black lh-solid">{{ site.email }}</a>
       <p class="f6 db lh-solid">© 2016 Duygu Kaçar</p>
       <div class="mt5">
         <a href="/language/" title="Language" class="f6 dib pr2 mid-gray dim">Language</a>
