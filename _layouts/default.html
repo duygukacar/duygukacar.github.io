@@ -2,40 +2,25 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     {% include meta.html %}
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.5.3/css/tachyons.min.css"/>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   </head>
 
   <body class="w-100 sans-serif">
-    <nav class="dt w-100 border-box ph3 pv4 ph5-ns">
-      <a class="dtc v-mid mid-gray link dim w-25" href="{{ site.baseurl }}/" title="Home">
-        <img src="{{ site.baseurl }}/images/duygukacar.jpg" class="dib w2 w3-m w3-l h2 h3-m h3-l br-100" alt="{{ site.name }}">
-      </a>
-      <div class="dtc v-mid w-75 tr">
-        <a class="link dim dark-gray f6 f5-ns dib mr3 mr4-ns" href="{{ site.baseurl }}/" title="About">Home</a>
-        <a class="link dim dark-gray f6 f5-ns dib" href="{{ site.baseurl }}/cv" title="Contact">CV</a>
-      </div>
-    </nav>
 
-    <div id="main" role="main">
+    {% include header.html %}
+
+    <main role="main">
       {{ content }}
-    </div>
+    </main>
 
-    <footer class="pa3 ph5-ns pv6 bt b--black-10 black-70">
-      <a href="mailto:{{ site.email | encode_email }}" class="link b f3 f2-ns dim black lh-solid">{{ site.email }}</a>
-      <p class="f6 db lh-solid">{{ site.time | date: '%Y' }} © Duygu Kaçar</p>
-      <div class="mt5">
-        <a href="https://instagram.com/{{ site.socialprofiles.instagram }}" class="f6 dib pr2 mid-gray dim">Instagram</a>
-        <a href="https://www.twitter.com/{{ site.socialprofiles.twitter }}" class="f6 dib pr2 mid-gray dim">Twitter</a>
-        <a href="{{ site.baseurl }}/disclaimer" class="f6 dib pr2 mid-gray dim">Disclaimer</a>
-      </div>
-    </footer>
-
+    {% include footer.html %}
     {% include analytics.html %}
+
   </body>
 </html>

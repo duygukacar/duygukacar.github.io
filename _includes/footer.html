@@ -1,0 +1,9 @@
+<footer class="pa3 ph5-ns pv6 bt b--black-10 black-70">
+  <a href="mailto:{{ site.email | encode_email }}" class="link b f3 f2-ns dim black lh-solid">{{ site.email }}</a>
+  <p class="f6 db lh-solid">{{ site.time | date: '%Y' }} © Duygu Kaçar</p>
+  <div class="mt5">
+    <a href="https://instagram.com/{{ site.socialprofiles.instagram }}" class="f6 dib pr2 mid-gray dim">Instagram</a>
+    <a href="https://www.twitter.com/{{ site.socialprofiles.twitter }}" class="f6 dib pr2 mid-gray dim">Twitter</a>
+    <a href="{{ site.baseurl }}/disclaimer" class="f6 dib pr2 mid-gray dim">Disclaimer</a>
+  </div>
+</footer>
