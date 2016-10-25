@@ -1,15 +1,20 @@
-<div class="fl-ns w-25-ns">
-  <h2 class="f5 ma0">Education</h2>
-</div>
+<div class="mb5 cf">
+  <div class="fl-ns w-25-ns">
+    <h2 class="f5 f4-ns ma0">Education</h2>
+  </div>
 
-<div class="fl-ns w-75-ns">
-  {% for item in site.data.education %}
-    <div class="fl-ns w-third-ns">
-      <h3 class="f5 ma0">{{ item.timeframe }}</h3>
-    </div>
+  <div class="fl-ns w-75-ns">
+    {% for item in site.data.education %}
+      <div class="{% if forloop.last == false %}mb4 {% endif %}cf">
+        <div class="fl-ns w-third-ns">
+          <h3 class="f5 f4-ns ma0">{{ item.timeframe }}</h3>
+        </div>
 
-    <div class="fl-ns w-two-thirds-ns">
-      <p class="ma0">{{ item.school }}</p>
-    </div>
-  {% endfor %}
+        <div class="fl-ns w-two-thirds-ns">
+          <p class="f5 f4-ns ma0">{{ item.course }}, {{ item.school }}, {{ item.location }}</p>
+          {% if item.text %}<p class="f5 f4-ns ma0">{{ item.text }}</p>{% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

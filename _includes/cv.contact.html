@@ -1,21 +1,27 @@
-<div class="fl-ns w-25-ns">
-  <h2 class="f5 ma0">Contact</h2>
-</div>
-
-<div class="fl-ns w-75-ns">
-  <div class="fl-ns w-third-ns">
-    <h3 class="f5 ma0">Email</h3>
+<div class="mb5 cf">
+  <div class="fl-ns w-25-ns">
+    <h2 class="f5 f4-ns ma0">Contact</h2>
   </div>
 
-  <div class="fl-ns w-two-thirds-ns">
-    <p class="ma0"><a href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p>
-  </div>
+  <div class="fl-ns w-75-ns">
+    <div class="mb4 cf">
+      <div class="fl-ns w-third-ns">
+        <h3 class="f5 f4-ns ma0">Email</h3>
+      </div>
 
-  <div class="fl-ns w-third-ns">
-    <h3 class="f5 ma0">Phone</h3>
-  </div>
+      <div class="fl-ns w-two-thirds-ns">
+        <p class="f5 f4-ns ma0"><a class="link black dim" href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p>
+      </div>
+    </div>
 
-  <div class="fl-ns w-two-thirds-ns">
-    <p class="ma0">{{ site.phone }}</p>
+    <div class="cf">
+      <div class="fl-ns w-third-ns">
+        <h3 class="f5 f4-ns ma0">Phone</h3>
+      </div>
+
+      <div class="fl-ns w-two-thirds-ns">
+        <p class="f5 f4-ns ma0">{{ site.phone }}</p>
+      </div>
+    </div>
   </div>
 </div>

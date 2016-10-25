@@ -3,9 +3,81 @@
   location: Istanbul/London
   role: Creative Director
   type: Freelance
+  text:
 
-- timeframe: October 2015 – Present
+- timeframe: Oct 2015 – Present
   employer: FILA UK
+  location: London
+  role: Product Developer and Production Coordinator
+  type: Full-time
+  text:
+
+- timeframe: Jul 2015 – Aug 2015
+  employer: A Number of Names
+  location: London
+  role: Product Developer and Production Coordinator
+  type: Freelance
+  text:
+
+- timeframe: May 2015 – Jul 2015
+  employer: Sense of Danger
   location: London
   role: Creative Director
   type: Freelance
+  text:
+
+- timeframe: May 2015 – Jul 2015
+  employer: Jack Wills Head Office
+  location: London
+  role: Production Assistant
+  type: Contract
+  text:
+
+- timeframe: Jan 2014 – Nov 2014
+  employer: DAAS Trading
+  location: London
+  role: Product Developer and Production Coordinator
+  type: Full-time
+  text:
+
+- timeframe: Sep 2011 – Oct 2012
+  employer: Amaka Design House
+  location: London
+  role: Creative Director and Production Coordinator
+  type: Full-time
+  text:
+
+- timeframe: Jun 2011 – Aug 2011
+  employer: Peyman Usmay Bespoke
+  location: New York
+  role: Assistant Designer
+  type: Internship
+  text:
+
+- timeframe: Sep 2010 – May 2011
+  employer: Rhythm
+  location: London
+  role: Assistant Designer and Accounts Coordinator
+  type: Contract
+  text:
+
+- timeframe: Jul 2007 – Aug 2009
+  employer: Castleblair Textiles
+  location: London
+  role: Junior Designer
+  type: Full-time
+  text:
+
+- timeframe: May 2005 – Jan 2007
+  employer: Lay Textile
+  location: Istanbul
+  role: Assistant Designer
+  type: Full-time
+  text:
+
+- timeframe: Oct 2002 – Apr 2005
+  employer: Rose Textile
+  location: Istanbul
+  role: Production-/Merchandising-/Accounts-Coordinator
+  type: Full-time
+  text:
