@@ -1,9 +1,10 @@
-<footer class="pa3 ph5-ns pv6 bt b--black-10 black-70">
-  <a href="mailto:{{ site.email | encode_email }}" class="link b f3 f2-ns dim black lh-solid">{{ site.email }}</a>
-  <p class="f6 db lh-solid">{{ site.time | date: '%Y' }} © Duygu Kaçar</p>
-  <div class="mt5">
-    <a href="https://instagram.com/{{ site.socialprofiles.instagram }}" class="f6 dib pr2 mid-gray dim">Instagram</a>
-    <a href="https://www.twitter.com/{{ site.socialprofiles.twitter }}" class="f6 dib pr2 mid-gray dim">Twitter</a>
-    <a href="{{ site.baseurl }}/disclaimer" class="f6 dib pr2 mid-gray dim">Disclaimer</a>
+<footer class="pa3 ph5-ns pv5 pv6-ns bt b--black-10">
+  <p class="f3 f2-ns db mt0 mb2">
+    <a href="mailto:{{ site.email | encode_email }}" class="link b f3 f2-ns dim black">{{ site.email }}</a>
+  </p>
+  <p class="f5 db mt0 mb4 silver">{{ site.time | date: '%Y' }} © Duygu Kaçar</p>
+  <div>
+    <a href="https://instagram.com/{{ site.socialprofiles.instagram }}" class="f5 dib pr2 black dim">Instagram</a>
+    <a href="https://www.twitter.com/{{ site.socialprofiles.twitter }}" class="f5 dib pr2 black dim">Twitter</a>
   </div>
 </footer>

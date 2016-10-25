@@ -1,13 +1,17 @@
 <div class="cf">
   <div class="fl-ns w-25-ns">
-    <h2 class="f5 f4-ns ma0">Exhibitions</h2>
+    <h2 class="f2 f4-ns mt0 mb4">Exhibitions</h2>
   </div>
 
-  <div class="fl-ns w-75-ns">
+  <div class="fl-ns w-75-ns lh-copy">
     {% for item in site.data.exhibitions %}
-      <div class="{% if forloop.last == false %}mb4 {% endif %}cf">
+      <div class="{% if forloop.last == false %}mb4 mb0-ns {% endif %}cf">
         <div class="fl-ns w-third-ns">
-          <h3 class="f5 f4-ns ma0">{{ item.timeframe }}</h3>
+          {% if item.timeframe %}
+            <h3 class="f4 ma0">{{ item.timeframe }}</h3>
+          {% else %}
+            <h3 class="f4 ma0 dn db-ns">–</h3>
+          {% endif %}
         </div>
 
         <div class="fl-ns w-two-thirds-ns">

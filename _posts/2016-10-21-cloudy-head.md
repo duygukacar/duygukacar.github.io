@@ -1,6 +1,7 @@
 ---
 layout: default
-title: You're up and running!
+title: Cloudy-head
+cover: https://s3-us-west-1.amazonaws.com/tachyonsio/img/watchmen.jpg
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).

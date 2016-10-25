@@ -1,19 +1,32 @@
-<div class="mb5 cf">
+<div class="mb5 mb6-ns cf">
   <div class="fl-ns w-25-ns">
-    <h2 class="f5 f4-ns ma0">Work Experience</h2>
+    <h2 class="f2 f4-ns mt0 mb4">Work Experience</h2>
   </div>
 
-  <div class="fl-ns w-75-ns">
+  <div class="fl-ns w-75-ns lh-copy">
     {% for item in site.data.work %}
-      <div class="{% if forloop.last == false %}mb4 {% endif %}cf">
+      <div class="{% if forloop.last == false %}mb5 mb6-ns {% endif %}cf">
         <div class="fl-ns w-third-ns">
-          <h3 class="f5 f4-ns ma0">{{ item.timeframe }}</h3>
+          <h3 class="f4 ma0">{{ item.timeframe }}</h3>
         </div>
 
         <div class="fl-ns w-two-thirds-ns">
-          <p class="f5 f4-ns ma0">{{ item.employer }}, {{ item.location }}</p>
+          <p class="f5 f4-ns ma0"><span class="i">{{ item.employer }}</span>, {{ item.location }}</p>
           <p class="f5 f4-ns ma0">{{ item.role }}</p>
-          <p class="f5 f4-ns ma0">{{ item.type }}</p>
+          <p class="f5 f4-ns mt0 mb4">{{ item.type }}</p>
+          {% if item.text %}
+            <p class="f5 f4-ns ma0">{{ item.text }}</p>
+          {% endif %}
+          {% if item.contributions %}
+            <p class="f6 mv4 gray ttu tracked">What I contributed</p>
+            <ul class="ma0 pa0-ns">
+              {% for contribution in item.contributions %}
+                <li>
+                  <p class="f5 f4-ns ma0">{{ contribution | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         </div>
       </div>
     {% endfor %}

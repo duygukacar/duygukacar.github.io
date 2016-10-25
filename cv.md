@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-<article class="pa3 pa5-ns">
+<article class="pa3 pb5 pa5-ns">
   {% include cv.contact.html %}
   {% include cv.about.html %}
   {% include cv.work.html %}
