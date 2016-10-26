@@ -1,9 +1,39 @@
-<div class="mb5 mb6-ns cf">
+<div class="cf bt b--black-10 ph3 ph5-ns pv5 pv5-ns">
   <div class="fl-ns w-25-ns">
     <h2 class="f2 f4-ns mt0 mb4">About</h2>
   </div>
 
   <div class="fl-ns w-75-ns lh-copy">
+
+    <div class="mb4 mb0-ns cf">
+      <div class="fl-ns w-third-ns">
+        <h3 class="f4 ma0">Address</h3>
+      </div>
+
+      <div class="fl-ns w-two-thirds-ns">
+        <p class="f4 ma0">{{ site.address }}</p>
+      </div>
+    </div>
+
+    <div class="mb4 mb0-ns cf">
+      <div class="fl-ns w-third-ns">
+        <h3 class="f4 ma0">Email</h3>
+      </div>
+
+      <div class="fl-ns w-two-thirds-ns">
+        <p class="f4 ma0"><a class="black dim" href="mailto:{{ site.email | encode_email }}">{{ site.email }}</a></p>
+      </div>
+    </div>
+
+    <div class="mb4 mb0-ns cf">
+      <div class="fl-ns w-third-ns">
+        <h3 class="f4 ma0">Phone</h3>
+      </div>
+
+      <div class="fl-ns w-two-thirds-ns">
+        <p class="f4 ma0"><a class="black dim" href="tel:{{ site.phone }}">{{ site.phone }}</a></p>
+      </div>
+    </div>
 
     <div class="mb4 mb0-ns cf">
       <div class="fl-ns w-third-ns">
