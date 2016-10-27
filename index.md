@@ -5,7 +5,7 @@ layout: default
 <article class="pa3 pb5 pa5-ns">
   <h1 class="f2 f-subheadline-ns mt0 mb4">{{ site.description }}</h1>
   <p class="gray f6 mb4 ttu tracked">By Robert Bringhurst</p>
-  <p class="f4 f3-ns measure lh-copy ma0 mb4">
+  <p class="f4 f3-ns measure lh-copy mt0 mb4">
     {{ site.intro }}
   </p>
   <p class="f4 f3-ns measure lh-copy ma0">

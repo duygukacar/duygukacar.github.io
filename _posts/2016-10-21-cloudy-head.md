@@ -1,11 +1,14 @@
 ---
 layout: default
 title: Cloudy-head
+role: Creative Director, Designer
 cover: https://s3-us-west-1.amazonaws.com/tachyonsio/img/watchmen.jpg
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+<article class="pa3 pb5 pa5-ns">
+  <h1 class="f2 f-subheadline-ns mt0 mb4">{{ page.title }}</h1>
+  <p class="gray f6 mb4 ttu tracked">{{ page.role }}</p>
+  <p class="f4 f3-ns measure lh-copy ma0">
+    Within this segment, the smart textiles plays a big role and open a new gateway in the world of fashion. We are devoted ourselves to provide the highest quality craftsmanship, materials and executing the custom work exactly in accordance with the new trends and concepts.
+  </p>
+</article>
